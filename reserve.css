@@ -1,0 +1,60 @@
+body {
+  background-color: #333;
+  color: white;
+}
+
+form {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+#error-message {
+  color: red;
+}
+select option {
+  color: #fff;
+}

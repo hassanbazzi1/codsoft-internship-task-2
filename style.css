@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#home-menu a{
+    transition-duration: 0.5s;
+}
+#home-menu a::after{
+    transition: 0.5s;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    color: #fff;
+    margin: auto;
+}
+#home-menu a:hover::after{
+    width: 100%;
+}
+#about1 h2{
+    font-size: 40px;
+    margin-top: 20px;
+    color: #00abf0;
+    text-align: center;
+}
+#about1 p{
+    font-size: 25px;
+}
+#resume-download{
+    font-weight: 600;
+    box-shadow: 0 0 10px #00abf0;
+}
+#about2,
+#projects2,
+#skills2{
+    margin-bottom: 20px;
+}
+#resume-3{
+    margin-top: 40px;
+}
+p{
+    font-weight: 700;
+}
+.project{
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #fff;  
+    margin: 20px;
+}
+.project img {
+    max-width: 70%; 
+    height: auto;    
+}
+.project-link {
+    text-decoration: none;
+}
+
+.project {
+    background-color: #031540;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.project:hover {
+    background-color: #00abf0;
+   
+}
+
+
+.project-title {
+    font-weight: 600;
+    color: #00abf0;
+}
+.project-description {
+    color: #031540;
+    font-weight: 400;
+}
+

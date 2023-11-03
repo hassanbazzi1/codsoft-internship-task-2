@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reserve</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="reserve.css" />
+  </head>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function selected() {
+      var firstname = document.getElementsByName("firstname")[0].value;
+      var lastname = document.getElementsByName("lastname")[0].value;
+      var email = document.getElementsByName("email")[0].value;
+      var pay = document.getElementsByName("pay")[0].value;
+
+      if (
+        firstname.trim() === "" ||
+        lastname.trim() === "" ||
+        email.trim() === "" ||
+        pay.trim() === ""
+      ) {
+        alert("Missing Information!");
+        return false; // Prevent form submission
+      } else {
+        alert("Thank you " + firstname + " for submiting");
+        return true; // Allow form submission
+      }
+    }
+  </script>
+  <body>
+    <div class="container mt-5">
+      <form onsubmit="return selected()">
+        <h4>Enter the information below:</h4>
+
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="firstname"
+            placeholder="First Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="lastname"
+            placeholder="Last Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pay">Payment Card Number</label>
+          <input
+            type="password"
+            class="form-control"
+            name="pay"
+            placeholder="Payment Card Number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="select">Enter Room</label>
+          <select
+            class="form-control"
+            name="select"
+            style="background-color: #333"
+          >
+            <option>Deluxe Room</option>
+            <option>Exclusive Room</option>
+            <option>Premium Room</option>
+            <option>Standard Room</option>
+          </select>
+        </div>
+        <div style="display: flex">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <div id="DivM" style="color: #fff"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
